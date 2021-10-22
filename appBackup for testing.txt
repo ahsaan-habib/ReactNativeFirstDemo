@@ -1,0 +1,98 @@
+
+// Welcome screen code (not perfect)
+
+       <React.Fragment>
+      <View style={styles.container}>
+        <View
+          style={{
+            flex: 8,
+            width: "100%",
+          }}
+        >
+          <ImageBackground
+            source={require("./assets/background.jpg")}
+            resizeMode="cover"
+            style={{
+              flex: 1,
+              alignItems: "center",
+              paddingTop:
+                Platform.OS === "android" ? StatusBar.currentHeight + 40 : 0,
+            }}
+          >
+            <Image
+              source={require("./assets/logo-red.png")}
+              style={{
+                width: 50,
+                height: 50,
+              }}
+            />
+            <Text>Sell What You Don't Need</Text>
+          </ImageBackground>
+        </View>
+
+        <View
+          style={{
+            flex: 1,
+            width: "100%",
+            backgroundColor: "#f07f8a",
+          }}
+        ></View>
+
+        <View
+          style={{
+            flex: 1,
+            width: "100%",
+            backgroundColor: "#a5d8f0",
+          }}
+        ></View>
+      </View>
+    </React.Fragment>
+
+
+
+
+
+// viewImageScreen code
+
+
+    <React.Fragment>
+      <View
+        style={{
+          paddingTop:
+            Platform.OS === "android" ? StatusBar.currentHeight + 10 : 0,
+          flex: 1,
+          flexDirection: "row",
+          justifyContent: "space-between",
+          marginLeft: 20,
+          marginRight: 20,
+        }}
+      >
+        <View
+          style={{
+            width: 50,
+            height: 50,
+            backgroundColor: "#f07f8a",
+          }}
+        ></View>
+        <View
+          style={{
+            width: 50,
+            height: 50,
+            backgroundColor: "#a5d8f0",
+          }}
+        ></View>
+      </View>
+      <View
+        style={{
+          flex: 7,
+        }}
+      >
+        <Image
+          source={require("./app/assets/chair.jpg")}
+          style={{
+            height: "80% ",
+            width: "100%",
+          }}
+        />
+      </View>
+    </React.Fragment>
